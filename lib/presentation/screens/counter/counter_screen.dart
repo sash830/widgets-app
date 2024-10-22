@@ -26,7 +26,7 @@ class CounterScreen extends ConsumerWidget {
             icon: Icon(isDarkmode ? Icons.dark_mode_outlined : Icons.light_mode_outlined), // ICON DE TEMA OSCURO Y CLARO Y TERNARIO
             onPressed: () {
               ref.read(isDarkmodeProvider.notifier)
-              .update((isDarkmode) => !isDarkmode);
+              .update((state) => !state);
             } 
           )
         ],
